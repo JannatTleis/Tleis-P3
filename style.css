@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f7f6;
+  color: #2e3a3a;
+  line-height: 1.6;
+}
+
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #fd8eda;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+
+
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to bottom, #dbeafe, #f5f7f6);
+}
+
+
+.sketch {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+iframe {
+  width: 75%;
+  height: 320px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+
+.info {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.info p {
+  margin: 8px 0;
+}
+
+
+.instructions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.instructions li {
+  background-color: #eef5f3;
+  margin: 12px 0;
+  padding: 14px;
+  border-radius: 12px;
+  transition: 0.1s;
+}
+
+
+.instructions li:nth-child(1):hover {
+  background-color: #dfebfe; 
+}
+
+.instructions li:nth-child(2):hover {
+  background-color: #e0f9e3; 
+}
+
+.instructions li:nth-child(3):hover {
+  background-color: #fcecda; 
+}
+
+.instructions li:nth-child(4):hover {
+  background-color: #eedffe; 
+}
+
+.instructions li:nth-child(5):hover {
+  background-color: #d9fcf8; 
+}
+
+.instructions li:nth-child(6):hover {
+  background-color: #f6f9d8; 
+}
+
+.instructions li:nth-child(7):hover {
+  background-color: #fcdadc; 
+}
+
+.instructions li:nth-child(8):hover {
+  background-color: #dae6fd; 
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 40px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #07c029;
+  font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+  iframe {
+    width: 90%;
+    height: 260px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+
+@media (max-width: 425px) {
+
+  iframe {
+    display: none;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  header {
+    padding: 30px 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
